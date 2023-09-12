@@ -29,33 +29,28 @@
 */
 
 /*
- * views promoted cards add responsive behaviour and image enlarge on hover
+ * views promoted cards add image enlarge on hover
  */
-@media (min-width: 799px) {
-  .view-promoted-cards .views-grid-box img {
-    -webkit-transform: scale(92%);
-    transform: scale(92%);
-    transition: transform .3s;
-  }
-  .view-promoted-cards .views-grid-box:hover img {
-    -webkit-transform: scale(100%);
-    transform: scale(100%);
-  }
+
+.view-promoted-cards .views-grid-box img {
+  -webkit-transform: scale(92%);
+  transform: scale(92%);
+  transition: transform .3s;
 }
+.view-promoted-cards .views-grid-box:hover img {
+  -webkit-transform: scale(100%);
+  transform: scale(100%);
+}
+
+/*
+ * views promoted cards add responsive vertical display for smaller width
+ */
+
 @media (max-width: 800px) {
   .view-promoted-cards .views-view-grid {
     display: block;
   }
   .view-promoted-cards .views-grid-box {
 	margin: 0 auto 2rem;
-  }
-  .view-promoted-cards .views-grid-box img {
-    -webkit-transform: scale(92%);
-    transform: scale(92%);
-    transition: transform .3s;
-  }
-  .view-promoted-cards .views-grid-box:hover img {
-    -webkit-transform: scale(100%);
-    transform: scale(100%);
   }
 }
