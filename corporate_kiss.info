@@ -10,6 +10,7 @@ stylesheets[all][] = css/main-menu.css
 stylesheets[all][] = css/menu.css
 stylesheets[all][] = css/pre.css
 stylesheets[all][] = css/breadcrumb.css
+stylesheets[all][] = css/cards.css
 
 ; Custom CSS  -- This file should not be affected by theme upgrades
 stylesheets[all][] = css/local.css

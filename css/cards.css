@@ -1,0 +1,56 @@
+/* Home page cards */
+
+/**
+ * views promoted cards change default styling
+ * remove border and add spacing and gaps
+ * comment out to retain default styling
+ */
+/*
+.block-views-promoted-cards-block {
+  padding: 0;
+}
+.view-promoted-cards {
+  padding: 0;
+  margin: 2rem auto;
+  text-align: center;
+}
+.view-promoted-cards .views-view-grid {
+  gap: 3rem;
+}
+.view-promoted-cards .views-grid-box {
+  border: none;
+  padding: 0;
+  max-width: 540px;
+}
+.view-promoted-cards .views-field-title h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+*/
+
+/*
+ * views promoted cards add image enlarge on hover
+ */
+
+.view-promoted-cards .views-grid-box img {
+  -webkit-transform: scale(92%);
+  transform: scale(92%);
+  transition: transform .3s;
+}
+.view-promoted-cards .views-grid-box:hover img {
+  -webkit-transform: scale(100%);
+  transform: scale(100%);
+}
+
+/*
+ * views promoted cards add responsive vertical display for smaller width
+ */
+
+@media (max-width: 800px) {
+  .view-promoted-cards .views-view-grid {
+    display: block;
+  }
+  .view-promoted-cards .views-grid-box {
+	margin: 0 auto 2rem;
+  }
+}
